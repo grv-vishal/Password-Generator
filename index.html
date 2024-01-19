@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="wrapper">
+            <h1>Password Generator</h1>
+
+            <!-- password display -->
+            <div class="display-container">
+
+               <input type="text" readonly placeholder="PASSWORD" class="display">
+               
+               <button class="copybtn" >
+                <span class="copymsg"></span>
+                <img src="image/copy.svg" alt="copy" width="25px" height="25px">
+               </button>
+            </div>
+
+
+            <!-- take input -->
+            <div class="input-container">
+                 <div class="length-container">
+                    <p>Passowrd Length</p>
+                    <p class="length">0</p>
+                 </div>
+
+                 <input type="range" min="1" max="20" step="1" class="slider">
+
+                 <div class="check">
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">Include Uppercase letters</label>
+                 </div>
+
+                 <div class="check">
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase">Include Lowercase letters</label>
+                 </div>
+
+                 <div class="check">
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers">Include Numbers</label>
+                 </div>
+
+                 <div class="check">
+                    <input type="checkbox" id="symbols">
+                    <label for="symbols">Include Symbols</label>
+                 </div>
+
+
+                 <div class="strength-container">
+                    <p>Strength</p>
+                    <div class="indicator"></div>
+                 </div>
+                 
+
+                 <button class="generatepass">Generate Password</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
